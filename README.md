@@ -22,3 +22,20 @@ dotnet add package Ogu.Extensions.BuilderOrganizer
 ```
 
 ## Usage
+
+```csharp
+public static BuilderOrganizer<IApplicationBuilder> Applications { get; internal set; } = new BuilderOrganizer<IApplicationBuilder>(ascending: false);
+
+public void ConfigureServices(IServiceCollection services)
+{
+    Applications.Add(4, app => app.UseRouting(), "UseRouting");
+    Applications.Add(0.9, app => app.UseAuthentication(), "UseAuthentication");
+    Applications.Add(0.8, app => app.UseAuthorization(), "UseAuthorization");
+    Applications.Add(0.7, app => app.UseEndpoints(endpoints => endpoints.MapControllers()), "UseEndpoints");
+}
+
+public void Configure(IApplicationBuilder app)
+{
+    Applications.Build(app);
+}
+```
