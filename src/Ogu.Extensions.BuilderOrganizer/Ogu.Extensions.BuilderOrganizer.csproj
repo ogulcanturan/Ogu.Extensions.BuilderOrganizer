@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+	<AssemblyName>Ogu.Extensions.BuilderOrganizer</AssemblyName>
+	<PackageId>Ogu.Extensions.BuilderOrganizer</PackageId>
+	<Product>Ogu.Extensions.BuilderOrganizer</Product>
+	<Version>1.0.0</Version>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Authors>Oğulcan TURAN</Authors>
+	<Copyright>Copyright (c) Oğulcan TURAN 2024</Copyright>
+	<PackageProjectUrl>https://github.com/ogulcanturan/Ogu.Extensions.BuilderOrganizer</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/ogulcanturan/Ogu.Extensions.BuilderOrganizer</RepositoryUrl>
+	<PackageTags>builder;net;utility;model;extensions;collections</PackageTags>
+	<Title>Organize and manage the registration of multiple builders</Title>
+	<RepositoryType>git</RepositoryType>
+	<Description>This library helps to organize and manage the registration of multiple builders</Description>
+	<PackageIcon>ogu-logo.png</PackageIcon>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="..\..\logo\ogu-logo.png" Pack="true" PackagePath="\" Visible="false" />
+	<None Include="README.md" Pack="true" PackagePath="\" Visible="false" />
+  </ItemGroup>
+
+</Project>
